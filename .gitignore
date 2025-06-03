@@ -1,0 +1,14 @@
+# Visual Studio cache and temporary files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Others
+*.log
+*.vsidx
