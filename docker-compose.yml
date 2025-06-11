@@ -1,0 +1,27 @@
+services:
+  ecommercelw.api.customers:
+    image: ${DOCKER_REGISTRY-}ecommercelwapicustomers
+    build:
+      context: .
+      dockerfile: ECommerceLW.Api.Customers\Dockerfile
+
+  ecommercelw.api.orders:
+    image: ${DOCKER_REGISTRY-}ecommercelwapiorders
+    build:
+      context: .
+      dockerfile: ECommerceLW.Api.Orders\Dockerfile
+
+
+  ecommercelw.api.products:
+    image: ${DOCKER_REGISTRY-}ecommercelwapiproducts
+    build:
+      context: .
+      dockerfile: ECommerceLW.Api.Products\Dockerfile
+
+
+  ecommercelw.api.search:
+    image: ${DOCKER_REGISTRY-}ecommercelwapisearch
+    build:
+      context: .
+      dockerfile: ECommerceLW.Api.Search\Dockerfile
+
